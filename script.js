@@ -26,6 +26,8 @@ function getTime() {
   seconds = new Date().getSeconds();
   if (hours > 12) {
     hours -= 12;
+  }
+  if (hours >= 12) {
     meridiem = "pm";
   } else {
     meridiem = "am";
