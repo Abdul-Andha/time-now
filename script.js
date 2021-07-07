@@ -24,13 +24,13 @@ function getTime() {
   hours = new Date().getHours();
   minutes = new Date().getMinutes();
   seconds = new Date().getSeconds();
-  if (hours > 12) {
-    hours -= 12;
-  }
   if (hours >= 12) {
     meridiem = "pm";
   } else {
     meridiem = "am";
+  }
+  if (hours > 12) {
+    hours -= 12;
   }
     
   hours = formatTime(hours);
